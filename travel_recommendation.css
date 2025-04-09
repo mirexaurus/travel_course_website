@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('dog.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 250, 240, 0.75); /* light overlay tint */
+    z-index: -1;
+  }
+
+h1, h2 {
+  color: #3b4a30;
+}
+
+a {
+  color: #6b3c3b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for homepage */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+  color: #7c4e5c;
+}
+
+/* Introduction section */
+.introduction {
+  font-size: 1.2em;
+  color: #5a5343;
+  background: #fff7ec;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* About us page */
+.who_we_are h1 {
+  font-size: 2.5em;
+  color: #7c4e5c;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.company_introduction {
+  background-color: #f9f4e9;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.1em;
+  color: #4f3a42;
+}
+
+.members {
+  background-color: #fff3e5;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.members h1 {
+  font-size: 2em;
+  color: #5b4937;
+  margin-bottom: 10px;
+}
+
+.members p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #3e4c37;
+}
+
+/* Form container */
+#contactForm {
+  background-color: #fffaf3;
+  border: 1px solid #e2dcd5;
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contact Us row */
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Contact Us Labels */
+.formGroup label {
+  flex: 0 0 120px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #5a5243;
+}
+
+.formGroup input,
+.formGroup textarea {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1em;
+  border: 1px solid #d7cbbf;
+  border-radius: 8px;
+  font-family: inherit;
+  background-color: #fefcf9;
+  resize: vertical;
+}
+
+.formGroup textarea {
+  min-height: 100px;
+}
+
+#contactForm button {
+  background-color: #c8a979;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #b49466;
+}
+
+#contactForm button:hover {
+  background-color: #b49466;
+}
+
+
+/* Nav bar style */
+.navbar {
+  background-color: #fffaf3;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6b4c3b;
+  font-size: 1.1em;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a2724d;
+}
